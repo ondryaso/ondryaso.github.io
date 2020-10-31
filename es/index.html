@@ -1,0 +1,77 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ondřej Ondryáš</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+        <link rel="icon" href="/favicon.png">
+        
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) {
+                const moreInfoA = document.getElementById("more_info");
+                const backA = document.getElementById("back");
+                const mainContentDiv = document.getElementById("main");
+                const moreInfoContentDiv = document.getElementById("info");
+
+                moreInfoA.addEventListener("click", function(e) {
+                    mainContentDiv.style = "display: none";
+                    moreInfoContentDiv.style = "";
+                });
+
+                backA.addEventListener("click", function(e) {
+                    moreInfoContentDiv.style = "display: none";
+                    mainContentDiv.style = "";
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content_box" id="main">
+                <pre class="code">
+{
+  "nombre": "<span class="name">Ondřej Ondryáš</span>",
+  "especialización": "C# developer",
+  "locación": "Brno, República Checa",
+  "estudiando": "<a href="https://www.fit.vut.cz/.en">Facultad de Tecnología de la Información, BUT</a>",
+  "correo": "<a href="mailto:ondryaso@ondryaso.eu">ondryaso@ondryaso.eu</a>",
+  "idiomas": [ "<a href="/cs">cs-CZ</a>", "<a href="/">en-GB</a>", "<a href="/es">es-ES</a>" ],
+  "aptitudesTécnicas": [ 
+    ".NET", "Java", "Python", "C++",
+    "GNU/Linux", "Windows"
+  ],
+  "pasatiempos": [
+    "Preparación de café", "Fotografía", "Piano",
+    "Teatro", "Música", "Lingüística"
+  ],
+  "másInfo": { <a href="#" id="more_info">...</a> }
+}
+                </pre>
+            </div>
+
+            <div class="content_box" id="info" style="display: none;">
+                <pre class="code code_smaller">
+"másInfo": {
+  "linkedin": "<a href="https://www.linkedin.com/in/ond%C5%99ej-ondry%C3%A1%C5%A1-21a538146/">Ondřej Ondryáš</a>",
+  "github": "<a href="https://github.com/ondryaso">ondryaso</a>",
+  "aptitudesDetalles": {
+    ".NET": "10 años de experiencia, desktop y ASP.NET, backend",
+    "Java": "OpenGL game development, Android development básico",
+    "C++": "principalmente IoT development en la plataforma Arduino/ESP",
+    "Python": "web development",
+    "Linux": "administración – Arch Linux, Debian"
+  },
+  "langDetails": {
+    "cs-CZ": "nativo",
+    "en-GB": "C1–C2",
+    "es-ES": "A2"
+  }
+}
+<a href="#" id="back">&lt;- volver</a>
+                </pre>
+            </div>
+        </div>
+    </body>
+</html>

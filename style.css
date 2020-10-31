@@ -1,0 +1,104 @@
+body {
+    background: rgb(43,18,48);
+    background: linear-gradient(0, rgba(43,18,48,1) 0%, rgba(68,27,77,1) 50%);
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.content_box {
+    display: block;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    min-width: 0;
+}
+
+.code {
+    color: #fffffff0;
+    font-family: Fira Code, monospace;
+    font-weight: lighter;
+    font-size: 1.7em;
+    line-height: 1.55em;
+    max-width: 100%;
+    overflow: auto;
+
+    text-shadow: 0.15em 0.15em 0.1em #0000001f;
+}
+
+.code a {
+    color: aliceblue;
+    text-decoration: none;
+
+    background-size: 1px 1em;
+    display: inline;
+
+    box-shadow:
+        inset 0 -0.05em #6c1c86,
+        inset 0 -0.04em white;
+    padding-bottom: 0.1em;
+
+}
+
+.code_smaller {
+    font-size: 1.5em;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 105%;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1039px) {
+    .code_smaller {
+        font-size: 1.1em;
+        line-height: 1.65em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .code {
+        font-size: 1.2em;
+        line-height: 1.65em;
+    }
+
+    .code_smaller {
+        font-size: 0.9em;
+        line-height: 1.65em;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .code_smaller {
+        font-size: 0.7em;
+        line-height: 1.7em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .code {
+        font-size: 0.9em;
+        line-height: 1.7em;
+        opacity: 1;
+        font-weight: normal;
+    }
+
+    .name {
+        font-size: 120%;
+    }
+
+    .code_smaller {
+        font-size: 0.7em;
+        line-height: 1.7em;
+    }
+}
