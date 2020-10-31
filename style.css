@@ -1,7 +1,6 @@
 body {
-    background: rgb(43,18,48);
-    background: linear-gradient(0, rgba(43,18,48,1) 0%, rgba(68,27,77,1) 50%);
-    
+    background: rgb(132, 152, 20);
+    background: linear-gradient(0, rgb(25, 37, 0) 0%, rgb(121, 177, 0) 37%);
 }
 
 .container {
@@ -22,7 +21,7 @@ body {
 }
 
 .code {
-    color: #fffffff0;
+    color: #fff;
     font-family: Fira Code, monospace;
     font-weight: lighter;
     font-size: 1.7em;
@@ -30,18 +29,18 @@ body {
     max-width: 100%;
     overflow: auto;
 
-    text-shadow: 0.15em 0.15em 0.1em #0000001f;
+    text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
 }
 
 .code a {
-    color: aliceblue;
+    color: #fff;
     text-decoration: none;
 
     background-size: 1px 1em;
     display: inline;
 
     box-shadow:
-        inset 0 -0.05em #6c1c86,
+        inset 0 -0.05em #046d0a,
         inset 0 -0.04em white;
     padding-bottom: 0.1em;
 
