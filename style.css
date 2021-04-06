@@ -1,6 +1,6 @@
 body {
     background: rgb(132, 152, 20);
-    background: linear-gradient(0, rgb(25, 37, 0) 0%, rgb(121, 177, 0) 37%);
+    background: linear-gradient(0, rgb(25, 37, 0) -5%, rgb(121, 177, 0) 12%);
 }
 
 .container {
@@ -28,8 +28,9 @@ body {
     line-height: 1.55em;
     max-width: 100%;
     overflow: auto;
+    margin: auto;
 
-    text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+    text-shadow: 0.05em 0.1em 0.15em rgba(0, 0, 0, 0.3);
 }
 
 .code a {
