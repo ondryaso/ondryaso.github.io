@@ -1,79 +1,58 @@
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ondřej Ondryáš</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
-        <link rel="icon" href="/favicon.png">
-        
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", function(event) {
-                const moreInfoA = document.getElementById("more_info");
-                const backA = document.getElementById("back");
-                const mainContentDiv = document.getElementById("main");
-                const moreInfoContentDiv = document.getElementById("info");
+<!DOCTYPE html>
+<html lang="cs">
 
-                moreInfoA.addEventListener("click", function(e) {
-                    mainContentDiv.style = "display: none";
-                    moreInfoContentDiv.style = "";
-                });
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.png">
+    <title>Ondřej Ondryáš</title>
+</head>
 
-                backA.addEventListener("click", function(e) {
-                    moreInfoContentDiv.style = "display: none";
-                    mainContentDiv.style = "";
-                });
-            });
-        </script>
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="content_box" id="main">
-                <pre class="code">
-{
-  "name": "<span class="name">Ondřej Ondryáš</span>",
-  "specialisation": "C# developer",
-  "location": "Brno, Czech Republic",
-  "studiesAt": "<a href="https://www.fit.vut.cz/.en">Faculty of Information Technology, BUT</a>",
-  "mail": "<a href="mailto:ondryaso@ondryaso.eu">ondryaso@ondryaso.eu</a>",
-  "langs": [ "<a href="/cs">cs-CZ</a>", "<a href="/">en-GB</a>", "<a href="/es">es-ES</a>" ],
-  "skills": [ 
-    ".NET", "Java", "Python", "C", "C++",
-    "SQL", "x86 ASM", "GNU/Linux", "Windows",
-    "Git", "Teamwork", "Project management"
-  ],
-  "hobbies": [
-    "Coffee", "Photography", "Piano",
-    "Theatre", "Music", "Linguistics",
-    "Graphics", "Video production"
-  ],
-  "moreInfo": { <a href="#" id="more_info">...</a> }
-}
-                </pre>
-            </div>
-
-            <div class="content_box" id="info" style="display: none;">
-                <pre class="code code_smaller">
-"moreInfo": {
-  "linkedin": "<a href="https://www.linkedin.com/in/ond%C5%99ej-ondry%C3%A1%C5%A1-21a538146/">Ondřej Ondryáš</a>",
-  "github": "<a href="https://github.com/ondryaso">ondryaso</a>",
-  "skillsDetails": {
-    ".NET": "11 years' experience, desktop and ASP.NET, mostly backend",
-    "Java": "OpenGL game development, basic Android development",
-    "C/C++": "mostly IoT development on the Arduino/ESP platform",
-    "Python": "web development",
-    "Linux": "system administration – Arch Linux, Debian-based"
-  },
-  "langDetails": {
-    "cs-CZ": "native speaker",
-    "en-GB": "C1–C2",
-    "es-ES": "A2"
-  }
-}
-<a href="#" id="back">&lt;- back</a>
-                </pre>
-            </div>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <img src="https://www.gravatar.com/avatar/d6ae9e3d43dbc57d5781838759d19ea1?s=256" alt="Personal Photo">
+            <h2>Ondřej Ondryáš</h2>
+            <p>
+                computer science student<br>
+                .NET developer<br>
+            </p>
+            <p class="light">
+                weird coffee person<br>
+                a curious being<br>
+                a leader
+            </p>
+            <a href="https://github.com/ondryaso"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ond%C5%99ej-ondry%C3%A1%C5%A1-21a538146/"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:ondryaso@ondryaso.eu"><i class="fas fa-envelope"></i></a>
         </div>
-    </body>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>
+                Hi. My name's Ondřej –⁠ some call me Leo though. I'm a&nbsp;computer science student (and a&nbsp;wannabe
+                researcher)
+                based in <a target="_blank" href="https://www.openstreetmap.org/relation/438171">Brno</a>, Czech
+                Republic.
+            </p>
+            <p>
+                I'm in the final year of the Information Technology and Artificial Intelligence master's programme
+                at <a target="_blank" href="https://www.fit.vut.cz/.en">FIT BUT</a>. My specialisation is Computer
+                Networks but I focus on cybersecurity.
+            </p>
+            <p>
+                I'm the chairman of <a href="https://su.fit.vut.cz">FIT BUT Students' Union</a>.<br>
+                I work part-time at <a href="https://www.lingea.cz">Lingea</a> as a&nbsp;full-stack web developer.
+            </p>
+            <p>
+                I speak Czech (and sometimes Slovak), English, limited Spanish and very basic Swedish.
+            </p>
+        </div>
+    </div>
+</body>
 </html>
