@@ -24,7 +24,7 @@ h2,
 }
 
 a {
-    color: #113478;
+    color: #1668a3;
     text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ img {
 
 /* animations / utilities */
 a:hover {
-    color: #1b4eb6;
+    color: #0a3b9d;
     cursor: pointer;
     transition: 0.15s ease-in-out;
 }
